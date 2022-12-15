@@ -28,8 +28,8 @@ public class CustomerAccessor{
  /*******************    データベースへの接続       **********************/
     private boolean connect(){
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            String url = "jdbc:mysql://192.168.67.230:3306/db_peach?allowPublicKeyRetrieval=true&useSSL=false";
+            Class.forName("com.mysql.cj.jdbc.Driver");//192.168.67.230:3306
+            String url = "jdbc:mysql:///db_peach?allowPublicKeyRetrieval=true&useSSL=false";
             String user = "root";
             String pass = "pass";
             conn = DriverManager.getConnection(url, user, pass);
